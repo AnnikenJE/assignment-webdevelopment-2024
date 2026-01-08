@@ -1,0 +1,58 @@
+:root {
+  --buy-r: 64;
+  --buy-g: 139;
+  --buy-b: 72;
+
+  --buy: rgb(var(--buy-r), var(--buy-g), var(--buy-b));
+
+  --buy-dark: rgb(
+    calc(var(--buy-r) * 0.9),
+    calc(var(--buy-g) * 0.9),
+    calc(var(--buy-b) * 0.9)
+  );
+
+  --buy-light: rgb(
+    calc(var(--buy-r) * 1.1),
+    calc(var(--buy-g) * 1.1),
+    calc(var(--buy-b) * 1.1)
+  );
+
+  --box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* 
+    Buttons - units
+*/
+
+.unit-price__btn {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--buy);
+  font-family: "Cinzel", sans-serif;
+  box-shadow: var(--box-shadow);
+  font-size: 24px;
+  margin: 32px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 8px;
+  width: 50%;
+  border: var(--buy-light) 2px, solid;
+  transition: all 0.2s ease-in-out;
+
+  .gold-coin__img,
+  .metal__img,
+  .wood__img {
+    width: 32px;
+  }
+}
+
+.unit-price__btn:hover {
+  background: var(--buy-light);
+  transform: translateY(-3px);
+  border: var(--buy) 2px, solid;
+}
+
+.unit-price__btn:active {
+  background: var(--buy-dark);
+  transform: translateY(-1px);
+}

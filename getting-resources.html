@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Resources</title>
+    <link rel="icon" type="image/png" href="images/axe-cursor.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/getting-resources.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="scripts/getting-resources.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="header-title">Armies of Zondor</h1>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="gathering-army.html"
+              >Gather your army</a
+            >
+          </li>
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="getting-resources.html"
+              >Farm resources</a
+            >
+          </li>
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="your-army.html"
+              >Your army</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <!-- Bildene er generert av ChatGPT -->
+    <main>
+      <h2 class="main-heading">Farm resources</h2>
+      <section class="harvest-zone-section">
+        <article class="harvest-zone__article">
+          <img
+            id="harvest-metal__btn"
+            class="harvest-zone__img"
+            src="images/mines-of-thiartha.jpg"
+            alt="Mines of thiartha"
+          />
+        </article>
+        <article class="harvest-zone__article">
+          <img
+            id="harvest-wood__btn"
+            class="harvest-zone__img"
+            src="images/woods-of-ghalduz.png"
+            alt="Woods of Galduz"
+          />
+        </article>
+      </section>
+      <section class="buy-gold-section">
+        <article class="buy-gold-article">
+          <h3>Buy gold with "real" money!</h3>
+          <p>
+            FOR 100,- NOK GET 100 GOLD! <i class="fa-solid fa-credit-card"></i>
+          </p>
+          <p>Debit Cards | Vipps | Paypal | Klarna</p>
+          <button id="buy-gold-for-real-money__btn">
+            BUY
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-element" id="gold-counter"></li>
+          <li class="footer-list-element" id="metal-counter"></li>
+          <li class="footer-list-element" id="wood-counter"></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

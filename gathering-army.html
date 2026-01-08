@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gathering Army</title>
+    <link rel="icon" type="image/png" href="images/axe-cursor.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gathering-army.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="scripts/gathering-army.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="header-title">Armies of Zondor</h1>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="gathering-army.html"
+              >Gather your army</a
+            >
+          </li>
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="getting-resources.html"
+              >Farm resources</a
+            >
+          </li>
+          <li class="header-list-element">
+            <a class="header-list-element__link" href="your-army.html"
+              >Your army</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <h2 class="main-heading">Gather your army</h2>
+      <div class="section__wrapper">
+        <h3 class="unit-name-heading">Warriors</h3>
+        <section
+          id="warrior-section"
+          class="unit-section grid-12-column"
+        ></section>
+        <h3 class="unit-name-heading">Animals</h3>
+        <section
+          id="animal-section"
+          class="unit-section grid-12-column"
+        ></section>
+        <h3 class="unit-name-heading">War Machines</h3>
+        <section
+          id="war-machine-section"
+          class="unit-section grid-12-column"
+        ></section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar">
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-element" id="gold-counter"></li>
+          <li class="footer-list-element" id="metal-counter"></li>
+          <li class="footer-list-element" id="wood-counter"></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

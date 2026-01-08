@@ -1,0 +1,263 @@
+:root {
+  --unit-r: 170;
+  --unit-g: 148;
+  --unit-b: 123;
+
+  --unit: rgb(var(--unit-r), var(--unit-g), var(--unit-b));
+
+  --unit-dark: rgb(
+    calc(var(--unit-r) * 0.9),
+    calc(var(--unit-g) * 0.9),
+    calc(var(--unit-b) * 0.9)
+  );
+
+  --background: rgb(
+    calc(var(--unit-r) * 1.5),
+    calc(var(--unit-g) * 1.5),
+    calc(var(--unit-b) * 1.5)
+  );
+
+  --dark-grey: #5a5a5a;
+
+  --box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*  For å unngå at footern går over section */
+main {
+  padding-bottom: 88px;
+}
+/*  
+    Header
+*/
+.header {
+  left: 0;
+  right: 0;
+}
+
+.header-title {
+  text-align: center;
+  font-family: "fleur de leah", sans-serif;
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-grey);
+  text-shadow: 2px 2px 5px #8b8b8b;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 3px black;
+  background-color: var(--dark-grey);
+  font-weight: 600;
+}
+
+.header-list-element {
+  padding: 32px;
+  font-family: "Cinzel", sans-serif;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-list-element:hover {
+  background-color: #666666;
+}
+
+.header-list-element__link {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px 5px #8b8b8b;
+}
+
+.header-list-element__link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* 
+    Main
+*/
+
+.main-heading {
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  font-size: 40px;
+}
+
+.unit-name-heading {
+  text-align: center;
+  font-family: "Cinzel", sans-serif;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  color: #404040;
+}
+
+.section__wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* 
+    Units
+*/
+
+.unit-name {
+  border-bottom: #404040 4px solid;
+  margin-bottom: 0px;
+}
+
+.warrior-article,
+.animal-article,
+.war-machine-article,
+.unit-article {
+  grid-column: auto / span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid var(--unit-dark);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: var(--box-shadow);
+  font-family: "Cinzel", sans-serif;
+  font-size: 23px;
+  background: var(--unit);
+  margin: 5%;
+  width: 90%;
+}
+
+.unit-img {
+  width: 98%;
+  border: var(--unit-dark) 5px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+.unit-img--purchased {
+  width: 100%;
+  border: var(--unit-dark) 5px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: var(--box-shadow);
+}
+
+.unit-img__wrapper {
+  padding: 36px;
+}
+
+/* 
+    Footer
+*/
+
+.footer-bar {
+  border-top: solid 3px black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--dark-grey);
+  color: white;
+  text-shadow: 2px 2px 5px #8b8b8b;
+  font-weight: 600;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Cinzel", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.footer-list-element {
+  font-size: 32px;
+}
+
+.footer-list-element__img {
+  width: 32px;
+}
+
+#metal-counter,
+#gold-counter,
+#wood-counter {
+  color: black;
+}
+
+/* 
+    Grid - Responsiv
+*/
+
+.grid-12-column {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+@media (width > 768px) {
+  .unit-article {
+    grid-column: auto / span 6;
+  }
+  .header-list {
+    flex-wrap: nowrap;
+  }
+
+  .warrior-article {
+    grid-column: auto / span 6;
+  }
+
+  .animal-article,
+  .war-machine-article {
+    grid-column: auto / span 6;
+  }
+}
+
+@media (width > 992px) {
+  .unit-article {
+    grid-column: auto / span 4;
+  }
+
+  .warrior-article {
+    grid-column: auto / span 4;
+  }
+
+  .animal-article,
+  .war-machine-article {
+    grid-column: auto / span 6;
+  }
+}
+
+@media (width > 1200px) {
+  .unit-article {
+    grid-column: auto / span 2;
+  }
+
+  .warrior-article {
+    grid-column: auto / span 4;
+  }
+
+  .section__wrapper {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
