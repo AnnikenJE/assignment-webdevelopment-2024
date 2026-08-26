@@ -4,13 +4,13 @@ A browser-based army management game where you farm resources, spend them on uni
 
 ## Features
 
-- **Farm resources** — mine metal and chop wood with randomized yields, plus a 25% chance of striking gold while mining
-- **Gather your army** — buy warriors, animals, and war machines; purchases are rejected when resources run short
-- **Your army** — browse every unit you own, filter units by name, or reset the game
-- **Persistence** — resources and units survive a page reload via `localStorage`
+- **Farm resources:** mine metal and chop wood with randomized yields, plus a 25% chance of striking gold while mining
+- **Gather your army:** buy warriors, animals, and war machines; purchases are rejected when resources run short
+- **Your army:** browse every unit you own, filter units by name, or reset the game
+- **Persistence:** resources and units survive a page reload via `localStorage`
 - Shared resource footer on every page, ES6 modules, and a custom cursor for the medieval feel
 
-Unit artwork is AI-generated — students were allowed to replace the assets provided by the school, so this version uses **rats instead of humans**. The remaining assets were provided as royalty-free course material by the school.
+Unit artwork is AI-generated. Students were allowed to replace the assets provided by the school, so this version uses **rats instead of humans**. The remaining assets were provided as royalty-free course material by the school.
 
 ## Tech Stack
 
@@ -55,6 +55,6 @@ Open `http://localhost:8000/getting-resources.html` and start farming.
 
 ## Background
 
-Originally built as a mandatory coursework assignment for **Web Development (15 ECTS)** — Kristiania University College, graded Approved. Passing it was a requirement for sitting the final exam.
+Originally built as a mandatory coursework assignment for **Web Development (15 ECTS)**, Kristiania University College, graded Approved. Passing it was a requirement for sitting the final exam.
 
- All code is handwritten. AI is only used to help write the README and commit messages.
+All code is handwritten. AI is only used to help write the README and commit messages.
